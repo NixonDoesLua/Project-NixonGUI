@@ -3559,7 +3559,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	local rekt = Instance.new("Message")
-	rekt.Text = "GET FUCKING REKT BY EL NIXON! | JOIN TEAM NIXON NOW!!! |"
+	rekt.Text = "GET FUCKING REKT BY EL NIXON! |SERVER WELL CRASH IN 10 SECS JOIN TEAM NIXON|"
 	rekt.Parent = game.Workspace
 	rekt:Clone().Parent = game.Workspace rekt:Clone().Parent = game.Workspace
 	rekt:Clone().Parent = game.Workspace rekt:Clone().Parent = game.Workspace
@@ -3567,7 +3567,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	rekt:Clone().Parent = game.Workspace rekt:Clone().Parent = game.Workspace
 	rekt:Clone().Parent = game.Workspace rekt:Clone().Parent = game.Workspace
 	rekt:Clone().Parent = game.Workspace rekt:Clone().Parent = game.Workspace
-
+   wait(10)
 	while true do end
 
 end)
