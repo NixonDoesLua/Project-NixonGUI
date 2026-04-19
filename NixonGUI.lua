@@ -55,7 +55,7 @@ topbar.Size = UDim2.new(0, 751,0, 42)
 
 local title = Instance.new("TextLabel")
 title.Parent = topbar
-title.Text = "NixonGUI V1.5"
+title.Text = "NixonGUI V1.6"
 title.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
 title.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 title.BorderSizePixel = 4
@@ -827,7 +827,7 @@ eeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeee.MouseButton1Click:Connect(function()
 	while true do
 		wait(0.1)
-		for _, v in pairs(workspace:GetDescendants()) do
+		for i, v in pairs(workspace:GetDescendants()) do
 			if v:IsA("BasePart") then
 				v.BrickColor = BrickColor.Random()
 			end
@@ -1288,16 +1288,16 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	local disco = Instance.new("ColorCorrectionEffect")
-	disco.Parent = lighting
-	lighting.TimeOfDay = 10
+	disco.Parent = game.Lighting
+	game.Lighting.TimeOfDay = 10
 	while true do
 		wait(0.1)
 		disco.TintColor = Color3.new(math.random(), math.random(), math.random())
-		lighting.ColorShift_Top = Color3.new(math.random(), math.random(), math.random())
-		lighting.ColorShift_Bottom = Color3.new(math.random(), math.random(), math.random())
-		lighting.OutdoorAmbient = Color3.new(math.random(), math.random(), math.random())
-		lighting.Ambient = Color3.new(math.random(), math.random(), math.random())
-		lighting.FogColor = Color3.new(math.random(), math.random(), math.random())
+		game.Lighting.ColorShift_Top = Color3.new(math.random(), math.random(), math.random())
+		game.Lighting.ColorShift_Bottom = Color3.new(math.random(), math.random(), math.random())
+		game.Lighting.OutdoorAmbient = Color3.new(math.random(), math.random(), math.random())
+		game.Lighting.Ambient = Color3.new(math.random(), math.random(), math.random())
+		game.Lighting.FogColor = Color3.new(math.random(), math.random(), math.random())
 	end
 end)
 
@@ -1312,7 +1312,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.38823
 eeeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 eeeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
-	lighting:ClearAllChildren()
+	game.Lighting:ClearAllChildren()
 end)
 
 local eeeeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
@@ -1373,11 +1373,11 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.38
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
-	lighting.FogEnd = 500
-	lighting.FogStart = 0
+	game.Lighting.FogEnd = 500
+	game.Lighting.FogStart = 0
 	while true do
 		wait(0.1)
-		lighting.FogColor = Color3.new(math.random(), math.random(), math.random())
+		game.Lighting.FogColor = Color3.new(math.random(), math.random(), math.random())
 	end
 end)
 
@@ -1815,7 +1815,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 		OW.SoundId = "rbxassetid://140544724441369"
 		OW:Play()
 
-		lighting.TimeOfDay = 10 local sky = Instance.new("Sky") sky.Parent = game.Lighting sky.SkyboxUp = "rbxassetid://759765631" sky.SkyboxDn = "rbxassetid://759765631" sky.SkyboxLf = "rbxassetid://759765631" sky.SkyboxRt = "rbxassetid://759765631" sky.SkyboxBk = "rbxassetid://759765631" sky.SkyboxFt = "rbxassetid://759765631" 
+		game.Lighting.TimeOfDay = 10 local sky = Instance.new("Sky") sky.Parent = game.Lighting sky.SkyboxUp = "rbxassetid://759765631" sky.SkyboxDn = "rbxassetid://759765631" sky.SkyboxLf = "rbxassetid://759765631" sky.SkyboxRt = "rbxassetid://759765631" sky.SkyboxBk = "rbxassetid://759765631" sky.SkyboxFt = "rbxassetid://759765631" 
 	end
 end)
 
@@ -1839,7 +1839,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	ohyeahmrkrabz.Looped = true
 	ohyeahmrkrabz:Play()
 	wait(5)
-	lel.TimeOfDay = 10
+	game.Lighting.TimeOfDay = 10
 	local krabssky = Instance.new("Sky")
 	krabssky.Parent = game.Lighting
 	krabssky.SkyboxBk = "http://www.roblox.com/asset/?id=861387966"
@@ -2064,20 +2064,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	end
 end)
 
-local eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.Parent = scriptholder2
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundTransparency = 0
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.Text = "Clone your self (cant work with hats)"
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.Size = UDim2.new(0, 150,0, 150)
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.TextScaled = true
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.TextColor3 = Color3.new(1, 1, 1)
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 
-	game.Players.LocalPlayer.Character:Clone().Parent = game.Workspace
-end)
 
 
 
@@ -2799,12 +2786,12 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	while true do
 		wait(1)
-		local lighting = game.Lighting
-		lighting.ColorShift_Top = Color3.new(math.random(), math.random(), math.random())
-		lighting.ColorShift_Bottom = Color3.new(math.random(), math.random(), math.random())
-		lighting.OutdoorAmbient = Color3.new(math.random(), math.random(), math.random())
-		lighting.Ambient = Color3.new(math.random(), math.random(), math.random())
-		lighting.FogColor = Color3.new(math.random(), math.random(), math.random())
+
+		game.Lighting.ColorShift_Top = Color3.new(math.random(), math.random(), math.random())
+		game.Lighting.ColorShift_Bottom = Color3.new(math.random(), math.random(), math.random())
+		game.Lighting.OutdoorAmbient = Color3.new(math.random(), math.random(), math.random())
+		game.Lighting.Ambient = Color3.new(math.random(), math.random(), math.random())
+		game.Lighting.FogColor = Color3.new(math.random(), math.random(), math.random())
 	end
 end)
 
@@ -2881,13 +2868,13 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.38
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
-	local fog = game.Lighting
+
 	fog.FogEnd = 500
 	while true do 
 		wait(1)	
-		fog.FogColor = Color3.new(0.215686, 1, 0)
+		game.Lighting.FogColor = Color3.new(0.215686, 1, 0)
 		wait(1)
-		fog.FogColor = Color3.new(0, 1, 0.968627)
+		game.Lighting.FogColor = Color3.new(0, 1, 0.968627)
 	end
 end)
 
@@ -3255,8 +3242,8 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	local ruinz = Instance.new("ColorCorrectionEffect")
-	lighting = game.Lighting
-	ruinz.Parent = lighting
+
+	ruinz.Parent = game.Lighting
 	ruinz.Saturation = 100
 end)
 
@@ -3480,9 +3467,8 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	end
 	wait(1)
 	local ruinz = Instance.new("ColorCorrectionEffect")
-	lighting = game.Lighting
 	ruinz.Name = "nigga"
-	ruinz.Parent = lighting
+	ruinz.Parent = game.Lighting
 	ruinz.Saturation = tonumber(othervalue.Text)
 end)
 
@@ -3504,9 +3490,8 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	end
 	wait(1)
 	local ruinz = Instance.new("ColorCorrectionEffect")
-	lighting = game.Lighting
 	ruinz.Name = "nigga2"
-	ruinz.Parent = lighting
+	ruinz.Parent = game.Lighting
 	ruinz.TintColor = Color3.new(tonumber(Red.Text), tonumber(Green.Text), tonumber(Blue.Text))
 end)
 
@@ -3528,9 +3513,8 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	end
 	wait(1)
 	local ruinz = Instance.new("BlurEffect")
-	lighting = game.Lighting
 	ruinz.Name = "nigga3"
-	ruinz.Parent = lighting
+	ruinz.Parent = game.Lighting
 	ruinz.Size = tonumber(othervalue.Text)
 end)
 
@@ -3560,7 +3544,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 			end
 		end)
 	end
-	
+
 end)
 
 eeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
@@ -3575,7 +3559,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	local rekt = Instance.new("Message")
-	rekt.Text = "GET FUCKING REKT BY EL NIXON! |SERVER WELL CRASH IN 10 SECS JOIN TEAM NIXON|"
+	rekt.Text = "GET FUCKING REKT BY EL NIXON! | JOIN TEAM NIXON NOW!!! |"
 	rekt.Parent = game.Workspace
 	rekt:Clone().Parent = game.Workspace rekt:Clone().Parent = game.Workspace
 	rekt:Clone().Parent = game.Workspace rekt:Clone().Parent = game.Workspace
@@ -3583,8 +3567,6 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	rekt:Clone().Parent = game.Workspace rekt:Clone().Parent = game.Workspace
 	rekt:Clone().Parent = game.Workspace rekt:Clone().Parent = game.Workspace
 	rekt:Clone().Parent = game.Workspace rekt:Clone().Parent = game.Workspace
-
-wait(10)
 
 	while true do end
 
@@ -3622,22 +3604,22 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
-for i, v in pairs(game.Players:GetDescendants()) do
-	if v:IsA("Player") then
-		local ruin = Instance.new("ScreenGui")
-		ruin.Parent = v.PlayerGui
+	for i, v in pairs(game.Players:GetDescendants()) do
+		if v:IsA("Player") then
+			local ruin = Instance.new("ScreenGui")
+			ruin.Parent = v.PlayerGui
 			local lel = Instance.new("ImageLabel")
 			lel.Parent = ruin
 			lel.Size = UDim2.new(0, 100, 0, 100)
 			lel.Image = "rbxassetid://" .. decalidd.Text
-		while true do
-			wait(0)
+			while true do
+				wait(0)
 				lel.Position = UDim2.new(0, mouse.X, 0, mouse.Y)
-			lel:Clone().Parent = ruin
+				lel:Clone().Parent = ruin
+			end
 		end
+
 	end
-	
-end
 end)
 
 eeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
@@ -3653,7 +3635,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	while true do
 		wait(0)
-			mouse.Icon = "rbxassetid://" .. decalidd.Text
+		mouse.Icon = "rbxassetid://" .. decalidd.Text
 	end
 end)
 
@@ -3672,7 +3654,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	local credits = Instance.new("Hint")
 	credits.Parent  = game.Workspace
 	credits.Text = "New born script by nixondoeslua"
-	
+
 	game.Players.LocalPlayer.Character["Left Arm"]:Destroy()
 	game.Players.LocalPlayer.Character["Right Arm"]:Destroy()
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
@@ -3680,23 +3662,23 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 		if v:IsA("Accessory") or v:IsA("Shirt") or v:IsA("Pants") then
 			v:Destroy()
 		end
+	end
+
+	for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+		if v:IsA("BasePart") then
+			v.Color = Color3.new(0.407843, 0.321569, 0.262745)
 		end
-		
-		for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
-			if v:IsA("BasePart") then
-				v.Color = Color3.new(0.407843, 0.321569, 0.262745)
-			end
-		end
+	end
 
 	for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
 		if v.Name == "Head" then
-		local newbornface = Instance.new("Decal")
-		newbornface.Parent = v
-		newbornface.Texture = "http://www.roblox.com/asset/?id=1090118598"
-		newbornface.Face = Enum.NormalId.Front
+			local newbornface = Instance.new("Decal")
+			newbornface.Parent = v
+			newbornface.Texture = "http://www.roblox.com/asset/?id=1090118598"
+			newbornface.Face = Enum.NormalId.Front
 		end
 	end 
-	
+
 	for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
 		if v.Name == "HumanoidRootPart" then
 			v.Touched:Connect(function(hit)
@@ -3708,7 +3690,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 			end)
 		end
 	end
-	
+
 end)
 
 eeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
