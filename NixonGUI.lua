@@ -40,7 +40,7 @@ mainframe.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 mainframe.BorderSizePixel = 4
 mainframe.Position = UDim2.new(0.104, 0,0.192, 0)
 mainframe.Size = UDim2.new(0, 751,0, 381)
-mainframe.Visible = false
+mainframe.Visible = true
 
 local drag = Instance.new("UIDragDetector")
 drag.Parent = mainframe
@@ -55,7 +55,7 @@ topbar.Size = UDim2.new(0, 751,0, 42)
 
 local title = Instance.new("TextLabel")
 title.Parent = topbar
-title.Text = "NixonGUI V1.6"
+title.Text = "NixonGUI V2.0"
 title.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
 title.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 title.BorderSizePixel = 4
@@ -3567,7 +3567,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	rekt:Clone().Parent = game.Workspace rekt:Clone().Parent = game.Workspace
 	rekt:Clone().Parent = game.Workspace rekt:Clone().Parent = game.Workspace
 	rekt:Clone().Parent = game.Workspace rekt:Clone().Parent = game.Workspace
-   wait(10)
+	wait(10)
 	while true do end
 
 end)
@@ -3687,6 +3687,11 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 				scream.Parent = v
 				scream.SoundId = "rbxassetid://113921626097667"
 				scream:Play()
+				local deathmessage = Instance.new("Hint")
+				deathmessage.Parent = game.Workspace
+				deathmessage.Text = "SlenderTubby new born player " .. player.Name .. " has killed " .. hit.Parent.Name .. "!"
+				wait(3)
+				deathmessage:Destroy()
 			end)
 		end
 	end
@@ -3705,6 +3710,8 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	local ff = Instance.new("ForceField")
+	ff.Parent = game.Workspace
+	wait(1)
 	ff.Parent = game.Players.LocalPlayer.Character["Torso"]
 end)
 
@@ -3727,59 +3734,326 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 end)
 
 
--- PASSWORD --
--- IT ALSO DEBUGS ALOT OF THINGS IN CONSOLE --
+eeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Parent = scriptholder2
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundTransparency = 0
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Text = "If you get touched the player who touches you dies"
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Size = UDim2.new(0, 150,0, 150)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.TextScaled = true
+eeeeeeeeeeeeeeeeeeeeeeeeeee.TextColor3 = Color3.new(1, 1, 1)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
+eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
+	for i, v in pairs(player.Character:GetChildren()) do
+		if v.Name == "HumanoidRootPart" then
+			v.Touched:Connect(function(hit)
+				if hit.Parent:FindFirstChild("Humanoid") then
+					hit.Parent:FindFirstChild("Humanoid").Health = 0
+				end
+			end)
+		end
+	end 
+end)
 
-password = "55152036"
-password2 = "nixonz"
-password3 = "i love skrub daddy"
-password4 = "1273"
-password5 = "evilx00jguy_dude"
-password6 = "hanky panky"
--- local trusteduser = {"bamababe2005", "evilxoojguy_dude", "NixonDoesLua", "LuaC0W", "Nix0nD0esLua", "x00jkidd"}
 
+eee = Instance.new("TextButton")
+eee.Parent = presentdecals
+eee.BackgroundTransparency = 0
+eee.Text = "emoji thing cowboy tuber93"
+eee.TextScaled = true
+eee.TextColor3 = Color3.new(1, 1, 1)
+eee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+eee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+eee.BorderSizePixel = 4
+eee.MouseButton1Click:Connect(function()
+	decalidd.Text = "95891149629895"
+end)	
 
-print("password injected")
+eee = Instance.new("TextButton")
+eee.Parent = presentdecals
+eee.BackgroundTransparency = 0
+eee.Text = "me at the xooj (xooj is said like ZOOJ so it sounds like zoo lel)"
+eee.TextScaled = true
+eee.TextColor3 = Color3.new(1, 1, 1)
+eee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+eee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+eee.BorderSizePixel = 4
+eee.MouseButton1Click:Connect(function()
+	decalidd.Text = "76767763164146"
+end)	
 
-print("Password is " .. password .. " just in case if i forget it or a trusted forgets it")
-print("Password is " .. password2 .. " just in case if i forget it or a trusted forgets it")
-print("Password is " .. password3 .. " just in case if i forget it or a trusted forgets it")
-print("Password is " .. password4 .. " just in case if i forget it or a trusted forgets it")
-print("Password is " .. password5 .. " just in case if i forget it or a trusted forgets it")
-print("Password is " .. password6 .. " just in case if i forget it or a trusted forgets it")
+eee = Instance.new("TextButton")
+eee.Parent = presentdecals
+eee.BackgroundTransparency = 0
+eee.Text = "swastika bypassed by team nixon"
+eee.TextScaled = true
+eee.TextColor3 = Color3.new(1, 1, 1)
+eee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+eee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+eee.BorderSizePixel = 4
+eee.MouseButton1Click:Connect(function()
+	decalidd.Text = "77451434730445"
+end)	
 
-local passwordframe = Instance.new("TextBox")
-passwordframe.Parent = ng
-passwordframe.Position = UDim2.new(0.393, 0,0.341, 0)
-passwordframe.Size = UDim2.new(0, 200,0, 50)
-passwordframe.Text = "PASSWORD NEEDED!"
-passwordframe.TextScaled = true
+eee = Instance.new("TextButton")
+eee.Parent = presentdecals
+eee.BackgroundTransparency = 0
+eee.Text = "moa zondong"
+eee.TextScaled = true
+eee.TextColor3 = Color3.new(1, 1, 1)
+eee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+eee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+eee.BorderSizePixel = 4
+eee.MouseButton1Click:Connect(function()
+	decalidd.Text = "132300540831928"
+end)	
 
-local enterbutton = Instance.new("TextButton")
-enterbutton.Text = "Subment"
-enterbutton.Parent = ng
-enterbutton.Position = UDim2.new(0.393, 0,0.466, 0)
-enterbutton.Size = UDim2.new(0, 200,0, 50)
-enterbutton.TextScaled = true
-enterbutton.MouseButton1Click:Connect(function()
-	if passwordframe.Text == password or passwordframe.Text == password2 or passwordframe.Text == password3  or passwordframe.Text == password4 or passwordframe.Text == password5 or passwordframe.Text == password6 then 
-		passwordframe.Text = "Welcome!"
-		wait(3)
-		enterbutton.Visible = false passwordframe.Visible = false mainframe.Visible = true
-		print("correct")
-		infobox.Name = "TEST"
-		Info()
-	else
-		enterbutton.Text = "wrong password idoit!!1!"
-		wait(3)
-		enterbutton.Text = "Subment"
-		print("wrong")
+eee = Instance.new("TextButton")
+eee.Parent = presentdecals
+eee.BackgroundTransparency = 0
+eee.Text = "illuminati"
+eee.TextScaled = true
+eee.TextColor3 = Color3.new(1, 1, 1)
+eee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+eee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+eee.BorderSizePixel = 4
+eee.MouseButton1Click:Connect(function()
+	decalidd.Text = "90258720639044"
+end)
+
+gggg = Instance.new("TextButton")
+gggg.Parent = presentaudios
+gggg.BackgroundTransparency = 0
+gggg.Text = 'untrust us'
+gggg.Size = UDim2.new(0, 150,0, 150)
+gggg.TextScaled = true
+gggg.TextColor3 = Color3.new(1, 1, 1)
+gggg.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+gggg.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+gggg.BorderSizePixel = 4
+gggg.MouseButton1Click:Connect(function()
+	audioid.Text = "123428853470425"
+	pitche.Text = "0.1"
+	volume.Text = "100"
+end)
+
+gggg = Instance.new("TextButton")
+gggg.Parent = presentaudios
+gggg.BackgroundTransparency = 0
+gggg.Text = 'AfterDark'
+gggg.Size = UDim2.new(0, 150,0, 150)
+gggg.TextScaled = true
+gggg.TextColor3 = Color3.new(1, 1, 1)
+gggg.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+gggg.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+gggg.BorderSizePixel = 4
+gggg.MouseButton1Click:Connect(function()
+	audioid.Text = "104547422235809"
+	pitche.Text = "0.1"
+	volume.Text = "100"
+end)
+
+gggg = Instance.new("TextButton")
+gggg.Parent = presentaudios
+gggg.BackgroundTransparency = 0
+gggg.Text = 'Lay all your love on me'
+gggg.Size = UDim2.new(0, 150,0, 150)
+gggg.TextScaled = true
+gggg.TextColor3 = Color3.new(1, 1, 1)
+gggg.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+gggg.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+gggg.BorderSizePixel = 4
+gggg.MouseButton1Click:Connect(function()
+	audioid.Text = "100133312952898"
+	pitche.Text = "0.1"
+	volume.Text = "100"
+end)
+
+gggg = Instance.new("TextButton")
+gggg.Parent = presentaudios
+gggg.BackgroundTransparency = 0
+gggg.Text = 'Gas Gas Gas'
+gggg.Size = UDim2.new(0, 150,0, 150)
+gggg.TextScaled = true
+gggg.TextColor3 = Color3.new(1, 1, 1)
+gggg.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+gggg.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+gggg.BorderSizePixel = 4
+gggg.MouseButton1Click:Connect(function()
+	audioid.Text = "94560530342729"
+	pitche.Text = "0.1"
+	volume.Text = "100"
+end)
+
+gggg = Instance.new("TextButton")
+gggg.Parent = presentaudios
+gggg.BackgroundTransparency = 0
+gggg.Text = 'DAJA VU!'
+gggg.Size = UDim2.new(0, 150,0, 150)
+gggg.TextScaled = true
+gggg.TextColor3 = Color3.new(1, 1, 1)
+gggg.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+gggg.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+gggg.BorderSizePixel = 4
+gggg.MouseButton1Click:Connect(function()
+	audioid.Text = "73600529926680"
+	pitche.Text = "0.1"
+	volume.Text = "100"
+end)
+
+gggg = Instance.new("TextButton")
+gggg.Parent = presentaudios
+gggg.BackgroundTransparency = 0
+gggg.Text = 'FALL FROM THE SKY'
+gggg.Size = UDim2.new(0, 150,0, 150)
+gggg.TextScaled = true
+gggg.TextColor3 = Color3.new(1, 1, 1)
+gggg.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+gggg.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+gggg.BorderSizePixel = 4
+gggg.MouseButton1Click:Connect(function()
+	audioid.Text = "92037532006968"
+	pitche.Text = "0.1"
+	volume.Text = "100"
+end)
+
+eeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Parent = scriptholder
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundTransparency = 0
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Text = "Reverb"
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Size = UDim2.new(0, 150,0, 150)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.TextScaled = true
+eeeeeeeeeeeeeeeeeeeeeeeeeee.TextColor3 = Color3.new(1, 1, 1)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
+eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
+for i,v in pairs(game.Workspace:GetDescendants()) do
+	if v:IsA("Sound") then
+		local reverb = Instance.new("ReverbSoundEffect")
+		reverb.Parent = v
+	
+	end
+end
+end)
+
+eeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Parent = scriptholder
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundTransparency = 0
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Text = "Distort"
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Size = UDim2.new(0, 150,0, 150)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.TextScaled = true
+eeeeeeeeeeeeeeeeeeeeeeeeeee.TextColor3 = Color3.new(1, 1, 1)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
+eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
+	for i,v in pairs(game.Workspace:GetDescendants()) do
+		if v:IsA("Sound") then
+			local reverb = Instance.new("DistortionSoundEffect")
+			reverb.Parent = v
+
+		end
 	end
 end)
 
+eeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Parent = scriptholder2
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundTransparency = 0
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Text = "CRAZY ARMS!!!!"
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Size = UDim2.new(0, 150,0, 150)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.TextScaled = true
+eeeeeeeeeeeeeeeeeeeeeeeeeee.TextColor3 = Color3.new(1, 1, 1)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
+eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
+	while true do
+		wait(0)
+		player.Character["Left Arm"].Orientation = Vector3.new(math.random(-360,360),math.random(-360,360),math.random(-360,360))
+		player.Character["Right Arm"].Orientation = Vector3.new(math.random(-360,360),math.random(-360,360),math.random(-360,360))
+	end 
+end)
+
+eeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Parent = scriptholder2
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundTransparency = 0
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Text = "Sit"
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Size = UDim2.new(0, 150,0, 150)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.TextScaled = true
+eeeeeeeeeeeeeeeeeeeeeeeeeee.TextColor3 = Color3.new(1, 1, 1)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
+eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
+	player.Character.Humanoid.Sit = true
+end)
+
+
+eeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Parent = scriptholder
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundTransparency = 0
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Text = 'Tool spam'
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Size = UDim2.new(0, 150,0, 150)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.TextScaled = true
+eeeeeeeeeeeeeeeeeeeeeeeeeee.TextColor3 = Color3.new(1, 1, 1)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
+eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
+	for i, v in pairs(game.Players:GetDescendants()) do
+		if v:IsA("Player") then
+			while true do 
+				wait(1)
+				local tool = Instance.new("Tool")
+				tool.Parent = v.Backpack
+				tool.ToolTip = "sorry not sorry! LOL"
+				tool.Name = "" .. text.Text
+			end
+		end
+	end
+end)
+
+eeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Parent = scriptholder
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundTransparency = 0
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Text = 'Tool spam 2'
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Size = UDim2.new(0, 150,0, 150)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.TextScaled = true
+eeeeeeeeeeeeeeeeeeeeeeeeeee.TextColor3 = Color3.new(1, 1, 1)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
+eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
+	for i, v in pairs(game.Players:GetDescendants()) do
+		if v:IsA("Player") then
+			while true do 
+				wait(1)
+				local tool = Instance.new("Tool")
+				tool.Parent = v.Backpack
+				tool.ToolTip = "sorry not sorry! LOL"
+				tool.TextureId = "rbxassetid://" .. decalidd.Text
+			end
+		end
+	end
+end)
+
+local image1 = "http://www.roblox.com/asset/?id=95891149629895"
+local image2 = "http://www.roblox.com/asset/?id=76767763164146"
+local image3 = "http://www.roblox.com/asset/?id=77451434730445"
+local image4 = "http://www.roblox.com/asset/?id=132300540831928"
+local image5 = "http://www.roblox.com/asset/?id=90258720639044"
+
+local randomimage = math.random(1,5)
+
 local ring = Instance.new("ImageLabel")
 ring.Parent = ng
-ring.Image = "http://www.roblox.com/asset/?id=131112153"
+if randomimage == 1 then ring.Image = image1 end
+if randomimage == 2 then ring.Image = image2 end
+if randomimage == 3 then ring.Image = image3 end
+if randomimage == 4 then ring.Image = image4 end
+if randomimage == 5 then ring.Image = image5 end
 ring.Size = UDim2.new(0, 122,0, 122)
 ring.Position = UDim2.new(0.829, 0,0.759, 0)
 ring.BackgroundTransparency = 1
