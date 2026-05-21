@@ -5,11 +5,7 @@
 --- thanks for using! --------------------------------------------------------------
 ------------------------------------------------------------------------------------
 
--- if theres any suggestins feel free to let me know on scriptblox page of the script! or if theres any bugs let me know by commenting on the scriptblox page and telling me the bug!
-
---note this has not yet been published to scriptblox so i well eatrher upload it on my youtube or github--
-
---untill then to message me just comment on my youtube or something xd
+-- have suggestions PM NixonDoesLua!
 
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
@@ -55,7 +51,7 @@ topbar.Size = UDim2.new(0, 751,0, 42)
 
 local title = Instance.new("TextLabel")
 title.Parent = topbar
-title.Text = "NixonGUI V2.2"
+title.Text = "NixonGUI V2.3"
 title.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
 title.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 title.BorderSizePixel = 4
@@ -4889,7 +4885,33 @@ g.MouseButton1Click:Connect(function()
 	decalidd.Text = "130464582754176"
 end)
 
+g = Instance.new("TextButton")
+g.Parent = presentdecals
+g.BackgroundTransparency = 0
+g.Text = "Nixon main avatar"
+g.Size = UDim2.new(0, 150,0, 150)
+g.TextScaled = true
+g.TextColor3 = Color3.new(1, 1, 1)
+g.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+g.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+g.BorderSizePixel = 4
+g.MouseButton1Click:Connect(function()
+	decalidd.Text = "132988549745126"
+end)
 
+g = Instance.new("TextButton")
+g.Parent = presentdecals
+g.BackgroundTransparency = 0
+g.Text = "Nixon main avatar logo"
+g.Size = UDim2.new(0, 150,0, 150)
+g.TextScaled = true
+g.TextColor3 = Color3.new(1, 1, 1)
+g.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+g.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+g.BorderSizePixel = 4
+g.MouseButton1Click:Connect(function()
+	decalidd.Text = "133400212266563"
+end)
 
 eeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
 eeeeeeeeeeeeeeeeeeeeeeeeeee.Parent = scriptholder
