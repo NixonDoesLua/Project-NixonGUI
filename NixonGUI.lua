@@ -55,7 +55,7 @@ topbar.Size = UDim2.new(0, 751,0, 42)
 
 local title = Instance.new("TextLabel")
 title.Parent = topbar
-title.Text = "NixonGUI V2.5"
+title.Text = "NixonGUI V2.6"
 title.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
 title.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 title.BorderSizePixel = 4
@@ -6097,7 +6097,54 @@ g.MouseButton1Click:Connect(function()
 	volume.Text = "100"
 end)
 
+g = Instance.new("TextButton")
+g.Parent = presentaudios
+g.BackgroundTransparency = 0
+g.Text = "Sweet lil bumble bee"
+g.Size = UDim2.new(0, 150,0, 150)
+g.TextScaled = true
+g.TextColor3 = Color3.new(1, 1, 1)
+g.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+g.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+g.BorderSizePixel = 4
+g.MouseButton1Click:Connect(function()
+	audioid.Text = "128961712071619"
+	pitche.Text = "1"
+	volume.Text = "100"
+end)
 
+
+g = Instance.new("TextButton")
+g.Parent = presentaudios
+g.BackgroundTransparency = 0
+g.Text = "Kiss me again (FULLY BYPASSED NO PITCH METHED!!)"
+g.Size = UDim2.new(0, 150,0, 150)
+g.TextScaled = true
+g.TextColor3 = Color3.new(1, 1, 1)
+g.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+g.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+g.BorderSizePixel = 4
+g.MouseButton1Click:Connect(function()
+	audioid.Text = "75189946724472"
+	pitche.Text = "1"
+	volume.Text = "100"
+end)
+
+g = Instance.new("TextButton")
+g.Parent = presentaudios
+g.BackgroundTransparency = 0
+g.Text = "BYE BYE JUMPSTYLE"
+g.Size = UDim2.new(0, 150,0, 150)
+g.TextScaled = true
+g.TextColor3 = Color3.new(1, 1, 1)
+g.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+g.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+g.BorderSizePixel = 4
+g.MouseButton1Click:Connect(function()
+	audioid.Text = "80590095242532"
+	pitche.Text = "1"
+	volume.Text = "100"
+end)
 
 local image1 = "http://www.roblox.com/asset/?id=95891149629895"
 local image2 = "http://www.roblox.com/asset/?id=76767763164146"
