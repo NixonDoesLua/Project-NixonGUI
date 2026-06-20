@@ -5,6 +5,11 @@
 --- thanks for using! --------------------------------------------------------------
 ------------------------------------------------------------------------------------
 
+-- idea script credits!! --
+
+-- poo rain suggested by tlal
+-- nothing spam suggested by shadyhax
+-- r00geman police decal suggested by r00geman
 
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
@@ -47,7 +52,7 @@ topbar.Size = UDim2.new(0, 751,0, 42)
 
 local title = Instance.new("TextLabel")
 title.Parent = topbar
-title.Text = "NixonGUI V2.7"
+title.Text = "NixonGUI V2.8"
 title.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
 title.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 title.BorderSizePixel = 4
@@ -1090,10 +1095,6 @@ eeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 		if v:IsA("BasePart") then
 			local fire = Instance.new("Fire")
 			fire.Parent = v
-			fire.Size = othervalue.Text
-			fire.Heat = othervalue.Text
-			fire.Color = Color3.new(Red.text, Green.text, Blue.text)
-			fire.SecondaryColor = Color3.new(Red.text, Green.text, Blue.text)
 		end
 	end
 end)
@@ -1119,7 +1120,6 @@ eeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 		if v:IsA("BasePart") then
 			local fire = Instance.new("Sparkles")
 			fire.Parent = v
-			fire.Color = Color3.new(Red.text, Green.text, Blue.text)
 		end
 	end
 end)
@@ -1948,7 +1948,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	game.Players.LocalPlayer.Character.Humanoid.MaxHealth = 999999999999999
 	while true do 
 		wait(0)
-		game.Players.LocalPlayer.Character.Humanoid.Health = 999999999999999
+			game.Players.LocalPlayer.Character.Humanoid.Health = 999999999999999
 	end
 
 end)
@@ -3837,13 +3837,13 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
-	for i,v in pairs(game.Workspace:GetDescendants()) do
-		if v:IsA("Sound") then
-			local reverb = Instance.new("ReverbSoundEffect")
-			reverb.Parent = v
-
-		end
+for i,v in pairs(game.Workspace:GetDescendants()) do
+	if v:IsA("Sound") then
+		local reverb = Instance.new("ReverbSoundEffect")
+		reverb.Parent = v
+	
 	end
+end
 end)
 
 eeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
@@ -3958,10 +3958,10 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
-	local hint = Instance.new("Hint")
-	hint.Parent = game.Workspace
-	hint.Text = "E"
-	wait(0.5)
+local hint = Instance.new("Hint")
+hint.Parent = game.Workspace
+hint.Text = "E"
+wait(0.5)
 	hint.Text = "EL"
 	wait(0.5)
 	hint.Text = "EL "
@@ -4018,18 +4018,18 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
-	for i,v in pairs(game.Workspace:GetDescendants()) do
-		if v:IsA("BasePart") then
-			v.Material = Enum.Material.CorrodedMetal
-			v.Color = Color3.new(0, 0, 0)
-			local nuke = Instance.new("Explosion")
-			nuke.Parent = v
-			nuke.Position = v.Position
-			local fire = Instance.new("Fire")
-			fire.Parent = v
-			fire.Size = 100
-		end
+for i,v in pairs(game.Workspace:GetDescendants()) do
+	if v:IsA("BasePart") then
+		v.Material = Enum.Material.CorrodedMetal
+		v.Color = Color3.new(0, 0, 0)
+		local nuke = Instance.new("Explosion")
+		nuke.Parent = v
+		nuke.Position = v.Position
+		local fire = Instance.new("Fire")
+		fire.Parent = v
+		fire.Size = 100
 	end
+end
 end)
 
 g = Instance.new("TextButton")
@@ -4421,17 +4421,17 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
-	local heh = Instance.new("Atmosphere")
-	heh.Parent = game.Lighting
-	heh.Density = 0
-	heh.Offset = 0
-	heh.Glare = 10
-	heh.Haze = 10
-	while true do
-		wait(0.3)
-		heh.Color = Color3.new(math.random(), math.random(), math.random())
+local heh = Instance.new("Atmosphere")
+heh.Parent = game.Lighting
+heh.Density = 0
+heh.Offset = 0
+heh.Glare = 10
+heh.Haze = 10
+while true do
+	wait(0.3)
+	heh.Color = Color3.new(math.random(), math.random(), math.random())
 		heh.Decay = Color3.new(math.random(), math.random(), math.random())
-	end
+end
 end)
 
 eeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
@@ -4473,9 +4473,9 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 		wait(0.4)
 		local ball = Instance.new("Part")
 		local randomshape = math.random(1,3)
-		if randomshape == 1 then ball.Shape = "Ball" end
-		if randomshape == 2 then ball.Shape = "Block" end
-		if randomshape == 3 then ball.Shape = "Cylinder" end
+	if randomshape == 1 then ball.Shape = "Ball" end
+	if randomshape == 2 then ball.Shape = "Block" end
+	if randomshape == 3 then ball.Shape = "Cylinder" end
 		ball.Parent = game.Workspace
 		ball.Position = Vector3.new(math.random(-100,100),math.random(-100,100),math.random(-100,100))
 		ball.BrickColor = BrickColor.random()
@@ -4533,7 +4533,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 			if v.Name == "Terrain" or v.Name == "Camera" then
 				continue
 			end
-
+			
 			v.Name = "Head"
 			v.Parent = lel
 		end
@@ -4554,27 +4554,27 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	for i, v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
 		if v:IsA("BasePart") then
 			task.spawn(function()
-				while true do
-					wait(0.1)
+			while true do
+				wait(0.1)
+			
+			local randommesh = math.random(8, 12)
 
-					local randommesh = math.random(8, 12)
-
-					if randommesh == 8 then v.Shape = Enum.PartType.Ball end
-					if randommesh == 9 then v.Shape = Enum.PartType.Block end
-					if randommesh == 10 then v.Shape = Enum.PartType.CornerWedge end
-					if randommesh == 11 then v.Shape = Enum.PartType.Cylinder end
-					if randommesh == 12 then v.Shape = Enum.PartType.Wedge end
-					v.BrickColor = BrickColor.random()
-
-
-
-				end
+												if randommesh == 8 then v.Shape = Enum.PartType.Ball end
+												if randommesh == 9 then v.Shape = Enum.PartType.Block end
+												 if randommesh == 10 then v.Shape = Enum.PartType.CornerWedge end
+														if randommesh == 11 then v.Shape = Enum.PartType.Cylinder end
+																		if randommesh == 12 then v.Shape = Enum.PartType.Wedge end
+																		v.BrickColor = BrickColor.random()
+			
+			
+			
+			end
 			end)
 		end
 	end
 end)
 
-
+																				
 eeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
 eeeeeeeeeeeeeeeeeeeeeeeeeee.Parent = scriptholder2
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundTransparency = 0
@@ -4589,11 +4589,11 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	local pad = Instance.new("Part")
 	pad.Parent = game.Workspace
 	pad.Anchored = true
-
+	
 	local dreamybull = Instance.new("Decal", pad)
 	dreamybull.Face = Enum.NormalId.Top
 	dreamybull.Texture = "http://www.roblox.com/asset/?id=15533064331"
-
+	
 	while true do
 		wait(0.5)
 		pad.Position = game.Players.LocalPlayer.Character["Left Leg"].Position
@@ -4827,14 +4827,14 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
-	while true do
-		wait(0.5)
+while true do
+	wait(0.5)
 		local hax = Instance.new("Team")
 		hax.Parent = game.Teams
 		hax.AutoAssignable = true
 		hax.TeamColor =  BrickColor.random()
 		hax.Name = "" .. text.Text .. "          " .. math.random(1, 568796879)
-	end
+end
 end)
 
 
@@ -4852,10 +4852,10 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	for i, v in pairs(game.Workspace:GetDescendants()) do
 		if v:IsA("Decal") then
 			task.spawn(function()
-				while true do
-					wait(1)
-					v.Color3 = Color3.new(math.random(), math.random(), math.random())
-				end
+			while true do
+				wait(1)
+				v.Color3 = Color3.new(math.random(), math.random(), math.random())
+			end
 			end)
 		end
 	end
@@ -4952,8 +4952,8 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
-
-
+	
+	
 	local disco = Instance.new("ColorCorrectionEffect")
 	disco.Parent = game.Lighting
 	game.Lighting.TimeOfDay = 10
@@ -4983,21 +4983,21 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	while true do
 		wait(0.7)
-
-		local toad = Instance.new("Part")
-		toad.Parent = game.Workspace
+	
+	local toad = Instance.new("Part")
+	toad.Parent = game.Workspace
 		toad.Position = Vector3.new(math.random(-1000,1000),math.random(-1000,1000),math.random(-1000,1000))
-		toad.Size = Vector3.new(57.525, 69.455, 50)
-		toad.Anchored = false
+	toad.Size = Vector3.new(57.525, 69.455, 50)
+	toad.Anchored = false
+	
 
-
-		local mesh = Instance.new("SpecialMesh")
-		mesh.MeshType = Enum.MeshType.FileMesh
-		mesh.MeshId = "rbxassetid://1009824073"
-		mesh.TextureId = "rbxassetid://1009824086"
-		mesh.Parent = toad
+	local mesh = Instance.new("SpecialMesh")
+	mesh.MeshType = Enum.MeshType.FileMesh
+	mesh.MeshId = "rbxassetid://1009824073"
+	mesh.TextureId = "rbxassetid://1009824086"
+	mesh.Parent = toad
 	end
-
+	
 end)
 
 eeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
@@ -5019,7 +5019,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 		toad.Position = Vector3.new(math.random(-1000,1000),math.random(-1000,1000),math.random(-1000,1000))
 		toad.Size = Vector3.new(57.525, 69.455, 50)
 		toad.Anchored = false
-
+	
 
 		local mesh = Instance.new("SpecialMesh")
 		mesh.MeshType = Enum.MeshType.FileMesh
@@ -5091,7 +5091,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	rekt:Clone().Parent = game.Workspace rekt:Clone().Parent = game.Workspace
 	rekt:Clone().Parent = game.Workspace rekt:Clone().Parent = game.Workspace
 	wait(10)
-	for i, v in pairs(game.Workspace:GetDescendants()) do
+  for i, v in pairs(game.Workspace:GetDescendants()) do
 		if v:IsA("BasePart") then
 			while true do
 				wait(0)
@@ -5119,7 +5119,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 				v:Clone().Parent = game.Workspace
 				v:Clone().Parent = game.Workspace
 				v:Clone().Parent = game.Workspace
-				v:Clone().Parent = game.Workspace
+								v:Clone().Parent = game.Workspace
 				v:Clone().Parent = game.Workspace
 				v:Clone().Parent = game.Workspace
 				v:Clone().Parent = game.Workspace
@@ -5162,8 +5162,8 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 				v:Clone().Parent = game.Workspace
 				v:Clone().Parent = game.Workspace
 			end
+			end
 		end
-	end
 
 end)
 
@@ -5555,7 +5555,7 @@ g.MouseButton1Click:Connect(function()
 	decalidd.Text = "94942667918924"
 end)
 
-eeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
+ eeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
 eeeeeeeeeeeeeeeeeeeeeeee.Parent = scriptholder
 eeeeeeeeeeeeeeeeeeeeeeee.BackgroundTransparency = 0
 eeeeeeeeeeeeeeeeeeeeeeee.Text = "Disco decal trippy sky"
@@ -5590,7 +5590,7 @@ eeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 
 end)
 
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
+ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.Parent = scriptholder
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundTransparency = 0
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.Text = "particals 7 (Alot)"
@@ -5638,7 +5638,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 		end
 	end
 end)
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
+ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.Parent = scriptholder
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundTransparency = 0
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.Text = "Trippy particals"
@@ -5660,7 +5660,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	end 
 end)
 
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
+ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.Parent = scriptholder
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundTransparency = 0
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.Text = "Trippy particals 2"
@@ -5738,16 +5738,16 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.38
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
-	for i,v in pairs(game.Workspace:GetDescendants()) do
-		if v:IsA("BasePart") then
-			task.spawn(function()
-				while true do
-					wait(0.5)
-					v.Orientation = Vector3.new(math.random(-360, 360), math.random(-360, 360), math.random(-360, 360))
-				end
-			end)
+for i,v in pairs(game.Workspace:GetDescendants()) do
+	if v:IsA("BasePart") then
+		task.spawn(function()
+		while true do
+			wait(0.5)
+				v.Orientation = Vector3.new(math.random(-360, 360), math.random(-360, 360), math.random(-360, 360))
 		end
+		end)
 	end
+end
 end)
 
 g = Instance.new("TextButton")
@@ -5801,7 +5801,7 @@ g = Instance.new("TextButton")
 g.Parent = presentaudios
 g.BackgroundTransparency = 0
 g.Text = "679"
-g.Size = UDim2.new(0, 150,0, 150)
+ g.Size = UDim2.new(0, 150,0, 150)
 g.TextScaled = true
 g.TextColor3 = Color3.new(1, 1, 1)
 g.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
@@ -6181,7 +6181,7 @@ g.MouseButton1Click:Connect(function()
 	decalidd.Text = "74487614938954"
 end)
 
-eeeeeeeeeeeeeeeeee = Instance.new("TextButton")
+ eeeeeeeeeeeeeeeeee = Instance.new("TextButton")
 eeeeeeeeeeeeeeeeee.Parent = scriptholder
 eeeeeeeeeeeeeeeeee.BackgroundTransparency = 0
 eeeeeeeeeeeeeeeeee.Text = "Rain decals 2"
@@ -6293,7 +6293,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 	for i, v in pairs(game.Workspace:GetDescendants()) do
 		if v:IsA("BasePart") then
 			local mesh = Instance.new("SpecialMesh", v)
-		end
+			end
 	end
 end)
 
@@ -6313,7 +6313,7 @@ eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
 			local hilight = Instance.new("Highlight", v)
 			hilight.FillTransparency = 1
 			hilight.OutlineColor = Color3.new(Red.text, Green.text, Blue.text)
-		end
+			end
 	end
 end)
 
@@ -6581,7 +6581,7 @@ end)
 g = Instance.new("TextButton")
 g.Parent = presentaudios
 g.BackgroundTransparency = 0
-g.Text = "Legend"
+g.Text = "1444 remix"
 g.Size = UDim2.new(0, 150,0, 150)
 g.TextScaled = true
 g.TextColor3 = Color3.new(1, 1, 1)
@@ -6589,7 +6589,129 @@ g.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
 g.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 g.BorderSizePixel = 4
 g.MouseButton1Click:Connect(function()
-	audioid.Text = "99364334697497"
+	audioid.Text = "118753580646592"
+	pitche.Text = "0.2"
+	volume.Text = "100"
+end)
+
+g = Instance.new("TextButton")
+g.Parent = presentaudios
+g.BackgroundTransparency = 0
+g.Text = "A message the the black people "
+g.Size = UDim2.new(0, 150,0, 150)
+g.TextScaled = true
+g.TextColor3 = Color3.new(1, 1, 1)
+g.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+g.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+g.BorderSizePixel = 4
+g.MouseButton1Click:Connect(function()
+for i, v in pairs(game.Workspace:GetDescendants()) do
+	if v:IsA("Sound") then
+		v:Destroy()
+	end
+end
+wait(0.1)
+	local bigpenis = Instance.new("Sound")
+	bigpenis.Parent = game.Workspace
+	bigpenis.SoundId = "rbxassetid://140210591589433"
+	bigpenis.Volume = math.huge
+	bigpenis.PlaybackSpeed = 0.9
+	bigpenis.Looped = true
+	bigpenis:Play()
+
+	local balls = Instance.new("DistortionSoundEffect")
+	balls.Level = 1
+	balls.Parent = bigpenis
+end)
+
+g = Instance.new("TextButton")
+g.Parent = presentaudios
+g.BackgroundTransparency = 0
+g.Text = "Alabama nigga"
+g.Size = UDim2.new(0, 150,0, 150)
+g.TextScaled = true
+g.TextColor3 = Color3.new(1, 1, 1)
+g.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+g.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+g.BorderSizePixel = 4
+g.MouseButton1Click:Connect(function()
+	for i, v in pairs(game.Workspace:GetDescendants()) do
+		if v:IsA("Sound") then
+			v:Destroy()
+		end
+	end
+	wait(0.1)
+	local bigpenis = Instance.new("Sound")
+	bigpenis.Parent = game.Workspace
+	bigpenis.SoundId = "rbxassetid://130765776764067"
+	bigpenis.Volume = math.huge
+	bigpenis.PlaybackSpeed = 0.4
+	bigpenis.Looped = true
+	bigpenis:Play()
+
+	local balls = Instance.new("DistortionSoundEffect")
+	balls.Level = 0.99
+	balls.Parent = bigpenis
+end)
+
+g = Instance.new("TextButton")
+g.Parent = presentaudios
+g.BackgroundTransparency = 0
+g.Text = "Be my bad boy"
+g.Size = UDim2.new(0, 150,0, 150)
+g.TextScaled = true
+g.TextColor3 = Color3.new(1, 1, 1)
+g.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+g.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+g.BorderSizePixel = 4
+g.MouseButton1Click:Connect(function()
+	audioid.Text = "112167390803456"
+	pitche.Text = ".11"
+	volume.Text = "100"
+end)
+
+g = Instance.new("TextButton")
+g.Parent = presentaudios
+g.BackgroundTransparency = 0
+g.Text = "Bust down bloxiana"
+g.Size = UDim2.new(0, 150,0, 150)
+g.TextScaled = true
+g.TextColor3 = Color3.new(1, 1, 1)
+g.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+g.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+g.BorderSizePixel = 4
+g.MouseButton1Click:Connect(function()
+	for i, v in pairs(game.Workspace:GetDescendants()) do
+		if v:IsA("Sound") then
+			v:Destroy()
+		end
+	end
+	wait(0.1)
+	local bigpenis = Instance.new("Sound")
+	bigpenis.Parent = game.Workspace
+	bigpenis.SoundId = "rbxassetid://89001663796426"
+	bigpenis.Volume = math.huge
+	bigpenis.PlaybackSpeed = .25
+	bigpenis.Looped = true
+	bigpenis:Play()
+
+	local balls = Instance.new("DistortionSoundEffect")
+	balls.Level = 0.999
+	balls.Parent = bigpenis
+end)
+
+g = Instance.new("TextButton")
+g.Parent = presentaudios
+g.BackgroundTransparency = 0
+g.Text = "Erika hardstyle"
+g.Size = UDim2.new(0, 150,0, 150)
+g.TextScaled = true
+g.TextColor3 = Color3.new(1, 1, 1)
+g.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+g.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+g.BorderSizePixel = 4
+g.MouseButton1Click:Connect(function()
+	audioid.Text = "125887472350287"
 	pitche.Text = "0.1"
 	volume.Text = "100"
 end)
@@ -6597,7 +6719,7 @@ end)
 g = Instance.new("TextButton")
 g.Parent = presentaudios
 g.BackgroundTransparency = 0
-g.Text = "phonk"
+g.Text = "6 little eggs"
 g.Size = UDim2.new(0, 150,0, 150)
 g.TextScaled = true
 g.TextColor3 = Color3.new(1, 1, 1)
@@ -6605,10 +6727,103 @@ g.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
 g.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
 g.BorderSizePixel = 4
 g.MouseButton1Click:Connect(function()
-	audioid.Text = "123009259244191"
-	pitche.Text = "0.2"
+	audioid.Text = "72440356481431"
+	pitche.Text = "0.1"
 	volume.Text = "100"
 end)
+
+eeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Parent = scriptholder
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundTransparency = 0
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Text = 'nothing spam (suggested by shadyhax)'
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Size = UDim2.new(0, 150,0, 150)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.TextScaled = true
+eeeeeeeeeeeeeeeeeeeeeeeeeee.TextColor3 = Color3.new(1, 1, 1)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
+eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
+	for i, v in pairs(game.Workspace:GetDescendants()) do
+		if v:IsA("BasePart") then
+			local peepeepoopoo = Instance.new("Decal", v)
+			local peepeepoopoo2 = Instance.new("Decal", v)
+			local peepeepoopoo3 = Instance.new("Decal", v)
+			local peepeepoopoo4 = Instance.new("Decal", v)
+			local peepeepoopoo5 = Instance.new("Decal", v)
+			local peepeepoopoo6 = Instance.new("Decal", v)
+			
+			peepeepoopoo.Face = Enum.NormalId.Top
+
+			peepeepoopoo2.Face = Enum.NormalId.Bottom
+
+			peepeepoopoo3.Face = Enum.NormalId.Left
+
+			peepeepoopoo4.Face = Enum.NormalId.Right
+
+			peepeepoopoo5.Face = Enum.NormalId.Front
+
+			peepeepoopoo.Face = Enum.NormalId.Back
+		end
+	end
+	
+	for i, v in pairs(game.Workspace:GetDescendants()) do 
+			if v:IsA("BasePart") then
+				local tlalisgay = Instance.new("ParticleEmitter", v)
+			end
+	end
+	
+	for i, v in pairs(game.Workspace:GetDescendants()) do 
+			if v:IsA("BasePart") then
+				task.spawn(function()
+ while true do
+		wait(0.1)
+ 
+				local damnis = Instance.new("Explosion",game.Workspace)
+				damnis.Position = v.Position
+				end
+			end)
+		end
+	end
+end)
+	
+g = Instance.new("TextButton")
+g.Parent = presentdecals
+g.BackgroundTransparency = 0
+g.Text = "r00geman police decal (suggested by r00geman)"
+g.Size = UDim2.new(0, 150,0, 150)
+g.TextScaled = true
+g.TextColor3 = Color3.new(1, 1, 1)
+g.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+g.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+g.BorderSizePixel = 4
+g.MouseButton1Click:Connect(function()
+	decalidd.Text = "108772809795855"
+end)
+
+eeeeeeeeeeeeeeeeeeeeeeeeeee = Instance.new("TextButton")
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Parent = scriptholder
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundTransparency = 0
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Text = 'poo rain (suggested by tlal)'
+eeeeeeeeeeeeeeeeeeeeeeeeeee.Size = UDim2.new(0, 150,0, 150)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.TextScaled = true
+eeeeeeeeeeeeeeeeeeeeeeeeeee.TextColor3 = Color3.new(1, 1, 1)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BackgroundColor3 = Color3.new(0, 0.0823529, 0.388235)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderColor3 = Color3.new(0, 0.388235, 0.0313725)
+eeeeeeeeeeeeeeeeeeeeeeeeeee.BorderSizePixel = 4
+eeeeeeeeeeeeeeeeeeeeeeeeeee.MouseButton1Click:Connect(function()
+	while true do
+		wait(0.1)
+		local poo = Instance.new("Part", game.Workspace)
+		poo.Position = Vector3.new(math.random(-1000,1000), math.random(-1000,1000), math.random(-1000,1000))
+		poo.Anchored = false
+		poo.Size = Vector3.new(57.525, 69.455, 50)
+		poo.Color = Color3.new(0.333333, 0.333333, 0)
+		local xd = Instance.new("Smoke", poo)
+		xd.Color = Color3.new(0, 0.333333, 0)
+		xd.Size = 100
+	end
+end)
+
 
 
 
@@ -6649,15 +6864,6 @@ fuck.MouseButton1Click:Connect(function()
 		fuck.Text = "Close"
 	end
 end)
-
-local tittys = Instance.new("ImageLabel", mainframe)
-tittys.Position = UDim2.new(-0.153, 0,-0.123, 0)
-tittys.Size = UDim2.new(0, 100,0, 100)
-tittys.BackgroundTransparency = 1
-tittys.Image = "https://www.roblox.com/headshot-thumbnail/image?userId="..game.Players.LocalPlayer.UserId.."&width=420&height=420&format=png"
-
-
-
 
 
 print("NixonGUI created by NixonDoesLua bamababe2005 G00DXEN0 robloxalt12390 x00jkidd")
